@@ -10,12 +10,17 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#4f46e5">
     
-    <link rel="manifest" href="/assets/manifest-BmorJPbt.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3429/3429433.png">
     
     <title>EduPlan AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+      window.mermaid = mermaid;
+    </script>
     <style>
         body { 
           font-family: 'Inter', sans-serif; 
@@ -35,8 +40,6 @@
           background: transparent;
         }
     </style>
-
-<link rel="stylesheet" href="/index.css">
 <script type="importmap">
 {
   "imports": {
@@ -48,7 +51,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-BdQxh9l0.js"></script>
+<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
     <div id="root"></div>
@@ -63,5 +66,6 @@
         });
       }
     </script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>

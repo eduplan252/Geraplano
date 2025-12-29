@@ -1,0 +1,7 @@
+{
+  "name": "EduPlan AI - Gerador de Planos de Aula ",
+  "description": "Um assistente inteligente para professores criarem planos de aula completos e personalizados para qualquer matéria, alinhados às necessidades pedagógicas.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
